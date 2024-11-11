@@ -1,0 +1,96 @@
+/* universal css */
+body {
+    background-color: #FAF7F0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Faculty Glyphic", sans-serif;
+        font-weight: 400;
+}
+a {
+    text-decoration: none !important;
+}
+
+li {
+    list-style: none;
+}
+
+/* variables */
+:root {
+    --transition_1: all 1s ease-in-out;
+    --transition_2: all 0.5s ease-in-out;
+}
+
+/* Content layout */
+.text-light-white {
+    color: hsl(240, 0%, 44%) !important;
+}
+
+.movie-card {
+    scale: 1;
+    transition: var(--transition_1);
+}
+
+.card-text {
+    font-size: 10px;
+}
+
+.movie-card:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
+    transition: var(--transition_1);
+    scale: 1.1;
+}
+
+
+.movie-card-play-button {
+    position: absolute;
+    width: 80% !important;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 100%);
+    transition: var(--transition_2);
+
+}
+
+.movie-card:hover .movie-card-play-button {
+    transform: translate(-50%, -25%);
+    transition: var(--transition_2);
+
+}
+
+/* About */
+.about-section {
+    background-color: #D8D2C2;
+}
+
+/* Contact form */
+.contact-form {
+    width: 100%;
+    max-width: 650px;
+    background-color: white;
+}
+
+.contact-form button {
+    margin-left: auto;
+}
+
+/* Footer */
+footer {
+    margin-top: 200px;
+    background-color: black;
+    padding: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem 3rem;
+}
+
+footer .social-icon {
+    color: white;
+}
+
+footer .social-icon:hover {
+    text-decoration: underline !important;
+}
